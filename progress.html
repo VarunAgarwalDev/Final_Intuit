@@ -139,7 +139,7 @@
                 console.log(results.length);
                 window.completed_assignments = results.length;
                 res = results.length;
-                $("#total").val(results.length);
+                $("#total").val(results.length-1);
                 callback();
               },
               error: function(error) {
