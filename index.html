@@ -24,16 +24,16 @@ function completion(assignment){
   });
 }
 
-
-
-
 -->
 
-  <html>
+<html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="clock.css">
+    <link rel="stylesheet" type="text/css" href="meter.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
     <link rel="shortcut icon" href="favicon.ico" >
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
@@ -41,132 +41,46 @@ function completion(assignment){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-
-
-
+    <title>Viva la Sleep</title>
   </head>
-  <title>Viva la Sleep</title>
+  
 
 
-<body>
-  <h1>Viva la Sleep</h1>
-  <h2 class = 'tagLine'>Sleep > Facebook</h2>
-  <h2 class = 'summary'>A revolutionary way for students to manage time.</h2></br>
+  <body>
+    <h1>Viva la Sleep</h1>
+    <h2 class = 'tagLine'>Sleep > Facebook</h2>
+    <h2 class = 'summary'>A revolutionary way for students to manage time.</h2></br>
+  </body>
+
   <body background="gaussianblur.jpg">
 
+      <!-- This is the navbar -->
+      <div id='cssmenu' style="z-index:5;">
 
-      <div>
+        <ul>
+          <li class='active'><a href='#'><span class = 'home'>Home</span></a></li> 
+          <li class='active'><a href='aboutus.html'><span class = 'aboutus'>About Us</span></a></li>
+          <li class='has-sub'><a href='progress.html'><span class = 'progress'>Progress</span></a>
+          <li><a href='assignment.html'><span class = 'assignments'>Assignments</span></a>
+          <li class='active'><a href='landingpage.html'><span class = 'signout'>Sign Out</span></a></li>
+        </ul>
 
+      </div>
 
-        <div id='cssmenu' style="z-index:5;">
-
-          <ul>
-            <li class='active'><a href='#'><span class = 'home'>Home</span></a></li> 
-            <li class='active'><a href='aboutus.html'><span class = 'aboutus'>About Us</span></a></li>
-            <li class='has-sub'><a href='progress.html'><span class = 'progress'>Progress</span></a>
-            <li><a href='assignment.html'><span class = 'assignments'>Assignments</span></a>
-            <li class='active'><a href='landingpage.html'><span class = 'signout'>Sign Out</span></a></li>
-          </ul>
-
-          </div>
-
-
-        </body>
+  </body>
 
 
-        <body style="padding:0px; margin:0px; font-family:Arial, Verdana;background-color:#fff;">
+  <body style="padding:0px; margin:0px; font-family:Arial, Verdana;background-color:#fff;">
 
 
     <!-- use jssor.slider.min.js for release -->
     <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
     <script type="text/javascript" src="jssor.slider.min.js"></script>
-    
-    <script>
-        jssor_slider1_starter = function (containerId) {
-            var _CaptionTransitions = [];
-            _CaptionTransitions["L"] = { $Duration: 900, $FlyDirection: 1, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $ScaleHorizontal: 0.6, $Opacity: 2 };
-            _CaptionTransitions["R"] = { $Duration: 900, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $ScaleHorizontal: 0.6, $Opacity: 2 };
-            _CaptionTransitions["T"] = { $Duration: 900, $FlyDirection: 4, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $ScaleVertical: 0.6, $Opacity: 2 };
-            _CaptionTransitions["B"] = { $Duration: 900, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $ScaleVertical: 0.6, $Opacity: 2 };
-            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
-            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
-            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
-            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $FlyDirection: 10, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} };
-            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
-            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
-            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
 
-            var options = {
-                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
-
-                $ArrowKeyNavigation: true,                    //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
-                $SlideDuration: 1200,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                $SlideSpacing: 0,                           //[Optional] Space between each slide in pixels, default value is 0
-                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-
-                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
-                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
-                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
-                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
-                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
-                },
-
-                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
-                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
-                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-                },
-
-                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
-                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-                }
-            };
-
-            var jssor_slider1 = new $JssorSlider$(containerId, options);
-
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizes
-            function ScaleSlider() {
-                var bodyWidth = document.body.clientWidth;
-                if (bodyWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1920));
-                else
-                    $JssorUtils$.$Delay(ScaleSlider, 30);
-            }
-
-            ScaleSlider();
-            $JssorUtils$.$AddEvent(window, "load", ScaleSlider);
-
-
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $JssorUtils$.$OnWindowResize(window, ScaleSlider);
-            }
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $JssorUtils$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //}
-            //responsive code end
-        };
+    <!-- This is the slider code. For more info see slider.js -->
+    <script type="text/javascript" src="slider.js">
     </script>
+    
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
     <div id="slider1_container" style="position: relative; margin: 0 auto;
@@ -180,132 +94,42 @@ function completion(assignment){
                 top: 0px; left: 0px; width: 100%; height: 100%;">
             </div>
         </div>
+        
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
             height: 500px; overflow: hidden;">
             <div>
                 
                 <img u="image" src="studyblur.jpg" />
-                <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     
     <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
-    
-    <style type="text/css">
-        * {
-          margin: 0;
-          padding: 0;
-        }
-
-        body 
-        {
-            background-color: #FFA500;
-        }
-        /*#clock_container{
-          height:600px;
-          width:600px;
-        } */
-        
-        #clock 
-        {
-          position: relative;
-          width: 450px;
-          height: 450px;
-          
-          margin: 20px auto 0 auto;
-          background: url(images/clockface3.png);
-          background-size: 100%;
-          background-repeat: none;
-          list-style: none;
-        }
-        
-        #sec, #min, #hour 
-        {
-          position: absolute;
-          width: 30px;
-          height: 600px;
-          top: -70px;
-          left: 210px;
-          
-        }
-
-        #sec 
-        {
-            background: url(images/sechand3.png);
-            z-index: 3;
-        }
-
-        #min 
-        {
-          background: url(images/minhand2.png);
-          z-index: 2;
-        }
-           
-        #hour 
-        {
-          background: url(images/hourhand2.png);
-          z-index: 1;
-          
-        }
-            
-        p {
-            text-align: center; 
-            padding: 10px 0 0 0;
-            }
-    </style>
-    
-    <script type="text/javascript">
-    
-        $(document).ready(function() {
-
-          // set the push in of the clock hands
-          //var offset= $("#clock").offset();
-          //console.log("top: " + offset.top+ "left: " + offset.left);
-         
-              setInterval( function() {
-              var seconds = new Date().getSeconds();
-              var sdegree = seconds * 6;
-              var srotate = "rotate(" + sdegree + "deg)";
-              
-              $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
-                
-              }, 1000 );
-              
-         
-              setInterval( function() {
-              var hours = new Date().getHours();
-              var mins = new Date().getMinutes();
-              var hdegree = hours * 30 + (mins / 2);
-              var hrotate = "rotate(" + hdegree + "deg)";
-              
-              $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
-                  
-              }, 1000 );
-        
-        
-              setInterval( function() {
-              var mins = new Date().getMinutes();
-              var mdegree = mins * 6;
-              var mrotate = "rotate(" + mdegree + "deg)";
-              
-              $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
-                  
-              }, 1000 );
-         
-        }); 
-    
+   
+    <!-- This the javascript for the clock -->
+    <script type="text/javascript" src="clock.js">
     </script>
 
-</head>
+  </body>
+
+
 
 <body>
+
 <div id="clock_container">
   <ul id="clock"> 
     <li id="sec"></li>
     <li id="hour"></li>
     <li id="min"></li>
   </ul>
+    
+    <!-- CLOCK CAPTION ON SLIDER -->
+   <div style="position: absolute; width: 720px; height: 120px; top: 350px; padding: 5px;
+                    text-align: right; line-height: 36px; font-size: 30px;
+                        color: white;">
+                    Time Today
+    </div>
 </div>
   
 </body>
@@ -322,135 +146,9 @@ function completion(assignment){
   <meta charset='UTF-8'>
   
   
-  
-
-  
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-  <style type="text/css">
-
-  #page-wrap { width: 490px; margin: 80px auto; }
-
-
-
-
-
-
-
-
-
-
-
-    .meter { 
-      height: 80px;  /* Can be anything */
-      position: relative;
-      margin: 60px 0 20px 0; /* Just for demo spacing */
-      background: #555;
-      -moz-border-radius: 25px;
-      -webkit-border-radius: 25px;
-      border-radius: 25px;
-      padding: 10px;
-      -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-      -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
-      box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
-    }
-    .meter > span {
-      display: block;
-      height: 100%;
-         -webkit-border-top-right-radius: 8px;
-      -webkit-border-bottom-right-radius: 8px;
-             -moz-border-radius-topright: 8px;
-          -moz-border-radius-bottomright: 8px;
-                 border-top-right-radius: 8px;
-              border-bottom-right-radius: 8px;
-          -webkit-border-top-left-radius: 20px;
-       -webkit-border-bottom-left-radius: 20px;
-              -moz-border-radius-topleft: 20px;
-           -moz-border-radius-bottomleft: 20px;
-                  border-top-left-radius: 20px;
-               border-bottom-left-radius: 20px;
-      background-color: rgb(43,194,83);
-      background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(43,194,83)),
-        color-stop(1, rgb(84,240,84))
-       );
-      background-image: -moz-linear-gradient(
-        center bottom,
-        rgb(43,194,83) 37%,
-        rgb(84,240,84) 69%
-       );
-      -webkit-box-shadow: 
-        inset 0 2px 9px  rgba(255,255,255,0.3),
-        inset 0 -2px 6px rgba(0,0,0,0.4);
-      -moz-box-shadow: 
-        inset 0 2px 9px  rgba(255,255,255,0.3),
-        inset 0 -2px 6px rgba(0,0,0,0.4);
-      box-shadow: 
-        inset 0 2px 9px  rgba(255,255,255,0.3),
-        inset 0 -2px 6px rgba(0,0,0,0.4);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* This will give the stripes to the progress bar*/
-    .meter > span:after, .animate > span > span {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; bottom: 0; right: 0;
-      background-image: 
-         -webkit-gradient(linear, 0 0, 100% 100%, 
-            color-stop(.25, rgba(255, 255, 255, .2)), 
-            color-stop(.25, transparent), color-stop(.5, transparent), 
-            color-stop(.5, rgba(255, 255, 255, .2)), 
-            color-stop(.75, rgba(255, 255, 255, .2)), 
-            color-stop(.75, transparent), to(transparent)
-         );
-      background-image: 
-        -moz-linear-gradient(
-          -45deg, 
-            rgba(255, 255, 255, .2) 25%, 
-            transparent 25%, 
-            transparent 50%, 
-            rgba(255, 255, 255, .2) 50%, 
-            rgba(255, 255, 255, .2) 75%, 
-            transparent 75%, 
-            transparent
-         );
-      z-index: 1;
-      -webkit-background-size: 50px 50px;
-      -moz-background-size: 50px 50px;
-      -webkit-animation: move 2s linear infinite;
-         -webkit-border-top-right-radius: 8px;
-      -webkit-border-bottom-right-radius: 8px;
-             -moz-border-radius-topright: 8px;
-          -moz-border-radius-bottomright: 8px;
-                 border-top-right-radius: 8px;
-              border-bottom-right-radius: 8px;
-          -webkit-border-top-left-radius: 20px;
-       -webkit-border-bottom-left-radius: 20px;
-              -moz-border-radius-topleft: 20px;
-           -moz-border-radius-bottomleft: 20px;
-                  border-top-left-radius: 20px;
-               border-bottom-left-radius: 20px;
-      overflow: hidden;
-    }
-    
-    
-    
-    /*This will allow the progress move continously*/
-    @-webkit-keyframes move {
-        0% {
-           background-position: 0 0;
-        }
-        100% {
-           background-position: 50px 50px;
-        }
-    }
-
-
+  <style type="text/css" src="meter.css">
   </style>
+  
   <script>
   // Gives the progress bar a smooth transition (in the beginning)
     $(function() {
@@ -464,28 +162,25 @@ function completion(assignment){
       });
     });
   </script>
-  <body>
+  
+<body>
 
   <div id="page-wrap">
   
     <div class="meter">
       
       <!--This is where you adjust the progress bar -->
-      <span style="width: 10%"></span>
+      <span style="width: 50%"></span>
   </div>
+</div>
   
 </body>
 
-</head>
-
             </div>
             </div>
-
-            
-
             
             <!-- Example to add fixed static share buttons in slider END -->
-        </div>
+        
                 
         <!-- Bullet Navigator Skin Begin -->
         <style>
@@ -551,11 +246,12 @@ function completion(assignment){
         <!-- Arrow Right -->
         <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
         </span>
-        
+
         <!-- Arrow Navigator Skin End -->
         <a style="display: none" href="http://www.jssor.com">javascript</a>
     </div>
     <!-- Trigger -->
+
     <script>
         jssor_slider1_starter('slider1_container');
     </script>
