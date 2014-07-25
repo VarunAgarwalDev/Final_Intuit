@@ -4558,12 +4558,12 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: green;
+  background-color: black;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: green;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4574,7 +4574,7 @@ a.list-group-item.active > .badge,
   border-top-color: #d5d5d5;
 }
 .container .jumbotron {
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .jumbotron .container {
   max-width: 100%;
