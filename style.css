@@ -3,11 +3,13 @@
   font-style: normal;
   font-size: 3em;
   speak: none;
-}
+  }
 .icon-home:after { 
+  
   content: "5 min";
   font-size: .6em;
   font-family: "Roboto", sans-serif;
+
  } 
 .icon-cog:after { 
   content: "15 min";
