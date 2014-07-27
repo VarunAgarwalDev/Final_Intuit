@@ -1,11 +1,14 @@
-
-h1{
+#coolheader{
 	color: #ffffff;
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.05em;
-	font-weight: 300;
-	font-size: 5em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-size: 45px;
+
+    position: absolute;
+    left: 8.5%;
+    top: 7%;
 }
 
 h2, span {
@@ -353,6 +356,10 @@ footer {
   background: #FFFFFF;
   margin: 0;
   border-top: 6px solid #DEC240;
+
+  position: relative;
+  top: -800px;
+  left: 0px;
 }
 
 footer p { 

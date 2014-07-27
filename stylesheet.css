@@ -16,13 +16,13 @@ h1{
     letter-spacing: 0.1em;
 }
 
-.home, .progress, .signout, .aboutus, .assignments, .login {
+.home, .progress, .signout, .aboutus, .assignments, .login, .howitworks, .login {
     color: #ffffff;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
+    font-weight: 200;
+    font-size: 2em;
+    letter-spacing: 0.12em;
 }
 
 h2, span {
@@ -110,11 +110,14 @@ form {
 
 	text-align: center;
 
-	background-color: rgb(35,35,35); 
+	background-color: rgba(0, 0, 0, 0.0); 
 
-	box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+	box-shadow: 0px 2px 3px rgba(0,0,0,.0);
 	
 	vertical-align: middle;
+
+    position: absolute;
+    top: 200px;
 
 }
 

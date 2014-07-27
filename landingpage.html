@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="landingpage.css">
   <link rel="stylesheet" type="text/css" href="style.css">
  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="varunlikeswork.css">
   <link rel="stylesheet" type="text/css" href="clock.css">
 
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -16,58 +16,214 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Raleway:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="favicon.ico" >
 
-  
+
+<!-- social media icons -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="bootstrap-social.css" rel="stylesheet" >
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+<!-- ---- -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+
+  <style>
+        
+        img.bg {
+            /* Set rules to fill background */
+            min-height: 100%;
+            min-width: 1024px;
+            
+            /* Set up proportionate scaling */
+            width: 100%;
+            height: auto;
+            
+            /* Set up positioning */
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        @media screen and (max-width: 1024px){
+            img.bg {
+                left: 50%;
+                margin-left: -512px; }
+        }
+        
+        #page-wrap { position: relative; width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+        p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+    </style>
   
+
+  <title> Home | Viva la Sleep</title>
 </head>
-  <title>Viva la Sleep</title>
 
 
 <body>
-  <h1>Viva la Sleep</h1>
-  <h2 class = 'tagLine'>Sleep > Facebook</h2>
-  <h2 class = 'summary'>A revolutionary way for students to manage time.</h2></br>
-  <body background="gaussianblur.jpg">
 
-<div>
+    <img src="mainbackground.jpg" class="bg">
 
-
-<div id='cssmenu' style="z-index:5;">
-
-<ul>
-
-   <li class='active'><a href='aboutus.html'><span class = 'aboutus'>About Us</span></a></li>
-   <li class='active'><a href='howitworks.html'><span class = 'howitworks'>How it works</span></a></li>
-   <li class='active'><a href='#'><span class = 'jointherevolution'>Login</span></a>
-
-    <ul class='dropdown'>
-
-      
-        
-
-    <form name = "myform">
-    <p>Username <input id="username" type="text" name="username" placeholder="bradsmith@intuit.com"> Password <input id="password" type="password" name="pword" placeholder="********">
-    <input id="signIn" type="button" value="Sign In" name="Submit">
-    </p>
-
-    </form>
-        
-      
+    <div id='coolheader'>
+        TimeM
+    </div>
+<!--
+    <div class="text-right">
+    <br/> <br/>
+    <a class="btn btn-social-icon btn-lg btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-facebook"></i></a>
+    &nbsp; &nbsp; &nbsp;
+    <a class="btn btn-social-icon btn-lg btn-google-plus" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-google-plus"></i></a>
+    &nbsp; &nbsp; &nbsp;
+    <a class="btn btn-social-icon btn-lg btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-linkedin"></i></a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+-->
 
 
-      <p>Don't have an account?</p>
+<style>
 
-       <a class = "signUp" href="registration.html"><center>Sign Up!</center></a>
+@charset"utf-8";
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+ a[class*="entypo-"]:before {
+    font-family:'entypo', sans-serif;
+}
+/* ---------- GENERAL ---------- */
+ body {
+    background: #fffdf0;
+    font: 100%/1.5em sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.iconscool {
+    height: 3em;
+    left: 50%;
+    margin: -1.5em 0 0 -6em;
+    position: absolute;
+    top: 50%;
+    width: 12em;
+}
+/* ---------- SOCIAL ---------- */
+ .social {
+    position: relative;
+    height: 3em;
+    width: 12em;
+}
+.social li {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    margin: -2em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -ms-transition: -ms-transform .5s;
+    -o-transition: -o-transform .5s;
+    transition: transform .5s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    width: 4em;
+}
+.social a {
+    color: #fffdf0;
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 4em;
+}
+.social li:hover {
+    -webkit-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+}
+.facebook {
+    background: #155b9d;
+    left: 0;
+    top: 0%;
+}
+.twitter {
+    background: #1a9ec4;
+    bottom: 100%;
+    left: 50%;
+}
+
+.linked-in {
+    background: #157f9d;
+    left: 100%;
+    top: 0%;
+}
+</style>
+<div class="iconscool" style="position: relative; left: 1100px; top: 50px">
+    <ul class="social">
+        <li class="facebook"><a href="#" class="entypo-facebook"></a>
+
+        </li>
+        <li class="twitter"><a href="#" class="entypo-twitter"></a>
+
+        </li>
+
+        </li>
+        <li class="linked-in"><a href="#" class="entypo-linkedin"></a>
+
+        </li>
     </ul>
-
-
-   </li>
-
 </div>
+<!-- end container -->
 
+
+
+    <br/><br/><br/><br/><br/>
+
+
+    <!-- Background -->
+
+
+    <!-- This is the black bar -->
+    <div id='cssmenu' style="z-index:5;">
+
+        <ul>
+
+        <li class='active'><a href='aboutus.html'><span class = 'aboutus'><strong> About Us</strong></span></a></li>
+        <li class='active'><a href='howitworks.html'><span class = 'howitworks'><strong> How it works </strong></span></a></li>
+        <li class='active'><a href='#'><span class = 'login'><strong> Login </strong></span></a>
+
+        <ul class='dropdown'>
+
+        <form name = "myform">
+            <p>Login: <input id="username" type="text" name="username" placeholder=" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @gmail.com"> &nbsp; &nbsp; &nbsp;Password: <input id="password" type="password" name="pword" placeholder="********">
+            <input id="signIn" type="button" value="Sign In" name="Submit">
+            </p>
+
+        </form>
+            
+          
+
+
+           <a class = "signUp" href="registration.html"><center>Sign Up!</center></a>
+
+        </ul>
+
+
+        </li>
+
+    </div>
 
 </body>
 
@@ -183,8 +339,6 @@
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
             height: 500px; overflow: hidden;">
             <div>
-                
-                <img u="image" src="studyblur.jpg" />
                 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
@@ -209,7 +363,7 @@
   </ul>
   
   <!-- CLOCK CAPTION ON SLIDER -->
-   <div style="position: absolute; width: 720px; height: 120px; top: 350px; padding: 5px; text-align: right; line-height: 36px; font-size: 30px; color: white;"> Time Today
+   <div style="position: absolute; width: 720px; height: 120px; top: 350px; padding: 5px; text-align: right; line-height: 36px; font-size: 30px; color: white;"> Time Today:
     </div>
 </div>
   
@@ -221,8 +375,6 @@
             <div>
             
 
-
-              <img u="image" src="highlight.jpg" />
 <head>
   <meta charset='UTF-8'>
   
@@ -400,11 +552,110 @@
     
     </script>
 
+
+
+
+
+  <style>
+        @media screen and (max-width: 1024px){
+          img.bg {
+            left: 50%;
+            margin-left: -512px; }
+        }
+            
+        #page-wrap { 
+          position: relative; 
+          width: 800px; 
+          height: 850px;
+          margin: 50px auto;
+          padding: 20px; 
+          background: white;
+          -moz-box-shadow: 0 0 30px black;
+          -webkit-box-shadow: 0 0 30px black;
+          box-shadow: 0 0 30px black; 
+          top: -850px;
+        }
+
+        #page-wrap-extra {
+          position: relative; 
+          height: 800px;
+          margin: 50px auto;
+          padding: 20px; 
+          background: #EAEEF1;
+          -moz-box-shadow: 0 0 10px black;
+          -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black; 
+          top: 50px;
+        }
+
+        #informationandcontent { 
+          font: 15px/2 Georgia, Serif; 
+          margin: 0 0 30px 0; 
+          text-indent: 40px; 
+        }
+  </style>
+
+  <div id= "page-wrap-extra"> </div>
+  <div id="page-wrap">
+
+  <!--put crap information here -->
+    <div id= "informationandcontent">Hello </div>
+
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+    </div>
+  
+  </div>
+
 </body>
 
 <footer>
-      <p><class='active'><a href='landingpage.html'><span class = 'aboutus'><font size="4"><font color="black">Home</font></font></span></a> | ©2014 Viva la Sleep · | <class='active'><a href='ContactUs.html'><span class = 'aboutus'><font size="4"><font color="black">Contact Us</font></font></span></a></p>
-      <p>Copyright &copy; Viva la Sleep </p>
+      
+
+      <script>
+          $(document).ready(function () {
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+
+        });
+    </script>
+
+    <style>
+        .scrollup {
+            width: 110px;
+            height: 110px;
+            position: fixed;
+            bottom: 50px;
+            right: 100px;
+            display: none;
+            text-indent: -9999px;
+            background: url('scrollup.png') no-repeat;
+            content:url("http://www.atlantic.com.my/images/arrow-up.png");
+        }
+    </style>
+      <article style="height: 300px">
+            <a href="#" class="scrollup">Scroll</a>
+
+
+            <p><class='active'><a href='landingpage.html'><span class = 'aboutus'><font size="5"><font color="black"><strong>Home</strong></font></font></span><font size= "5"></a> | · About Us · | </font><class='active'><a href='ContactUs.html'><span class = 'aboutus'><font size="5"><font color="black"><strong>Contact Us</strong></font></font></span></a></p>
+            <font size= "10"><strong><p>Viva la Sleep </p></strong></font>
+
+      </article>
 
 </footer>
 
