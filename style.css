@@ -64,6 +64,7 @@ a:focus {
 }
 
 .page-wrap {
+  position: absolute;
   width: 960px;
   /* ISSAM THIS IS TO LOWER THE BUTTONS*/
   margin: 0px auto;
